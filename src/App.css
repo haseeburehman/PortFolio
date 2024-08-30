@@ -1,0 +1,13 @@
+.services{
+    margin-bottom: -20px;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(76, 200, 200);
+}
+@media (max-width: 480px) {
+    .services{
+        margin-bottom: -20px;
+        text-align: center;
+        font-size: 36px;
+    }
+}

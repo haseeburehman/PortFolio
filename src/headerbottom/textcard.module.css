@@ -1,0 +1,151 @@
+/* src/components/textcard.module.css */
+
+.textcard__card {
+  width: 100%;
+  max-width: 520px;
+  padding: 20px;
+  height: 400px;
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  border-radius: 20px;
+  box-shadow: 10px 10px 0 #000;
+  transform: rotate(-2deg);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.ul {
+  margin-top: -20px;
+  background-color: #f42c2c;
+}
+
+.textcard__card:active {
+  animation: textcardShake 0.5s ease-in-out;
+}
+
+.textcard__card:hover {
+  transform: rotate(0deg) scale(1.02);
+  box-shadow: 15px 15px 0 #000;
+}
+
+.textcard__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fdf6f6;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.name {
+  margin-top: -10px;
+  font-size: 40px;
+  color: aqua;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.divdisplay {
+  height: 30px;
+}
+
+.displaytext {
+  margin-top: -30px;
+  padding-bottom: 20px;
+}
+
+.textcard__subtitle {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #908d8d;
+  margin-top: 0px;
+  font-family: 'Futura', sans-serif;
+  text-align: justify;
+}
+
+.span {
+  font-size: 14px;
+  color: #dfdcdc;
+  font-family: 'Futura', sans-serif;
+  text-align: justify;
+}
+
+@keyframes textcardShake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+  .textcard__card {
+    width: 40%;
+    padding: 13px;
+    height: 420px;
+    box-shadow: 8px 8px 0 #000;
+  }
+
+  .textcard__title {
+    font-size: 17px;
+  }
+
+  .name {
+    font-size: medium;
+  }
+
+  .textcard__subtitle, .span {
+    font-size: 14px;
+  }
+
+  .divdisplay {
+    height: 25px;
+  }
+
+  .displaytext {
+    margin-top: -5px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .textcard__card {
+    box-shadow: 5px 5px 0 #000;
+    border-radius: 10px;
+    width: 95%;
+    box-shadow: 8px 8px 0 #000;
+    margin-left: -7px;
+  }
+
+  .textcard__title {
+    font-size: 18px;
+  }
+
+  .name {
+    font-size: small;
+  }
+
+  .textcard__subtitle, .span {
+    font-size: 12px;
+  }
+
+  .divdisplay {
+    height: 20px;
+  }
+
+  .displaytext {
+    margin-top: 0;
+    padding-bottom: 10px;
+  }
+}

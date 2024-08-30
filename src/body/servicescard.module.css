@@ -1,0 +1,98 @@
+.card {
+    margin-top: 20px;
+    width: 99%;
+    height: 260px;
+    border-radius: 12px;
+    background: #212121;
+    display: flex;
+    gap: 5px;
+    padding: .4em;
+  }
+  
+  .card p {
+    margin-top: -1px;
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .5s;
+    background: #212121;
+    border: 1px solid rgb(55, 139, 139);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card p:hover {
+    flex: 4;
+  }
+  
+  .card p span {
+    min-width: 14em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: rgb(59, 189, 189);
+    letter-spacing: .1em;
+  }
+  
+  .card p:hover span {
+    transform: rotate(0);
+  }
+  @media (max-width: 768px) {
+    .card {
+        margin-top: 20px;
+        width: 98%;
+        height: 390px;
+        border-radius: 10px;
+        background: #212121;
+        display: flex;
+        gap: 5px;
+        padding: .4em;
+      }
+      
+    .card p {
+        margin-top: -1px;
+        height: 100%;
+        flex: 1;
+        overflow: hidden;
+        cursor: pointer;
+        border-radius: 2px;
+        transition: all .5s;
+        background: #212121;
+        border: 1px solid rgb(55, 139, 139);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  }
+  @media (max-width: 480px) {
+    .card {
+        margin-top: 20px;
+        width: 96%;
+        height: 430px;
+        border-radius: 8px;
+        background: #212121;
+        display: flex;
+        gap: 5px;
+        padding: .4em;
+      }
+      
+    .card p {
+        margin-top: -1px;
+        height: 100%;
+        flex: 1;
+        overflow: hidden;
+        cursor: pointer;
+        border-radius: 2px;
+        transition: all .5s;
+        background: #212121;
+        border: 1px solid rgb(55, 139, 139);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  }
