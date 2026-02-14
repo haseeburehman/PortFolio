@@ -9,7 +9,7 @@ import project6 from '../images/project6.jpg';
 import project7 from '../images/project7.jpg';
 import project8 from '../images/project8.jpg';
 import project9 from '../images/project9.jpg';
-import "./ProjectCard.css";
+import "./projectcard.css";
 
 const ProjectCards = () => {
   const projects = [
