@@ -11,12 +11,20 @@ function App() {
     <>
       <NavBar />
       <Header/>
-      <AboutMe></AboutMe>
-      <h1 className='services'>Services</h1>
-      <ServicesCard/>
-      <AboutProject/>
-      <ProjectCard/>  
-      <Footer></Footer>
+      <div id="about-me">
+        <AboutMe></AboutMe>
+      </div>
+      <div id="services">
+        <h1 className='services'>Services</h1>
+        <ServicesCard/>
+      </div>
+      <div id="projects">
+        <AboutProject/>
+        <ProjectCard/>  
+      </div>
+      <div id="contact">
+        <Footer></Footer>
+      </div>
     </>
   );
 }
